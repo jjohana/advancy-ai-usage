@@ -1,680 +1,682 @@
 window.quizConfig = {
-  correctionTitle: "Correction from the training material"
+  "quizId": "advancy-ai-usage",
+  "quizName": "Advancy AI Usage Training Assessment",
+  "correctionTitle": "Correction from the training material"
 };
 
 window.quizQuestions = [
   {
-    q: "What is the most accurate description of a Large Language Model in the training?",
-    source: "Part 1 - LLM fundamentals: a Large Language Model predicts useful text from patterns learned during training and from the context provided.",
-    correct: 1,
-    options: [
+    "q": "What is the most accurate description of a Large Language Model in the training?",
+    "source": "Part 1 - LLM fundamentals: a Large Language Model predicts useful text from patterns learned during training and from the context provided.",
+    "correct": 0,
+    "options": [
       {
-        text: "A rules engine that follows fixed business logic and always gives the same deterministic answer.",
-        why: "Incorrect. The training distinguishes LLMs from rules engines; they generate likely text rather than following fixed rules."
+        "text": "A model that predicts useful text from learned patterns and the context it receives.",
+        "why": "Correct. This is the definition used in the LLM fundamentals section."
       },
       {
-        text: "A model that predicts useful text from learned patterns and the context it receives.",
-        why: "Correct. This is the definition used in the LLM fundamentals section."
+        "text": "A rules engine that follows fixed business logic and always gives the same deterministic answer.",
+        "why": "Incorrect. The training distinguishes LLMs from rules engines; they generate likely text rather than following fixed rules."
       },
       {
-        text: "An optimization solver that computes a guaranteed best answer for every consulting problem.",
-        why: "Incorrect. The training explicitly says an LLM is not an optimization solver and does not compute a guaranteed best answer."
+        "text": "An optimization solver that computes a guaranteed best answer for every consulting problem.",
+        "why": "Incorrect. The training explicitly says an LLM is not an optimization solver and does not compute a guaranteed best answer."
       },
       {
-        text: "A database that only retrieves exact sentences from approved source documents.",
-        why: "Incorrect. Retrieval can be added through tools, but an LLM itself generates text from patterns and context."
+        "text": "A database that only retrieves exact sentences from approved source documents.",
+        "why": "Incorrect. Retrieval can be added through tools, but an LLM itself generates text from patterns and context."
       },
       {
-        text: "A calculator designed mainly to verify numbers and formulas without human review.",
-        why: "Incorrect. The training warns that output must be validated; an LLM is not mainly a calculation-verification engine."
+        "text": "A calculator designed mainly to verify numbers and formulas without human review.",
+        "why": "Incorrect. The training warns that output must be validated; an LLM is not mainly a calculation-verification engine."
       }
     ]
   },
   {
-    q: "How should consultants treat an LLM answer before using it in work product?",
-    source: "Part 1 - LLMs are work accelerators, not proof: treat output as a draft hypothesis until sources, logic, numbers and confidentiality have been checked.",
-    correct: 3,
-    options: [
+    "q": "How should consultants treat an LLM answer before using it in work product?",
+    "source": "Part 1 - LLMs are work accelerators, not proof: treat output as a draft hypothesis until sources, logic, numbers and confidentiality have been checked.",
+    "correct": 2,
+    "options": [
       {
-        text: "As proof if the answer is confident and well written.",
-        why: "Incorrect. The training warns that LLMs can sound confident when wrong."
+        "text": "As proof if the answer is confident and well written.",
+        "why": "Incorrect. The training warns that LLMs can sound confident when wrong."
       },
       {
-        text: "As final if it includes citations, because citations remove the need for review.",
-        why: "Incorrect. Citations can be invented or limited; evidence and source quality still need review."
+        "text": "As final if it includes citations, because citations remove the need for review.",
+        "why": "Incorrect. Citations can be invented or limited; evidence and source quality still need review."
       },
       {
-        text: "As final if the task is only internal.",
-        why: "Incorrect. Internal use still requires checking sources, logic, numbers and confidentiality."
+        "text": "As a draft hypothesis until evidence, logic, numbers and confidentiality have been checked.",
+        "why": "Correct. This wording follows the practical rule from the training."
       },
       {
-        text: "As a draft hypothesis until evidence, logic, numbers and confidentiality have been checked.",
-        why: "Correct. This wording follows the practical rule from the training."
+        "text": "As final if the task is only internal.",
+        "why": "Incorrect. Internal use still requires checking sources, logic, numbers and confidentiality."
       },
       {
-        text: "As a neutral source of accountability that can replace consultant judgement.",
-        why: "Incorrect. The training keeps accountability with the consultant, not the model."
+        "text": "As a neutral source of accountability that can replace consultant judgement.",
+        "why": "Incorrect. The training keeps accountability with the consultant, not the model."
       }
     ]
   },
   {
-    q: "Which task is listed as a good use case for LLMs in the training?",
-    source: "Part 1 - LLMs are good at summarizing and comparing sources or documents, drafting, rewriting, coding, debugging and producing deliverables.",
-    correct: 0,
-    options: [
+    "q": "Which task is listed as a good use case for LLMs in the training?",
+    "source": "Part 1 - LLMs are good at summarizing and comparing sources or documents, drafting, rewriting, coding, debugging and producing deliverables.",
+    "correct": 4,
+    "options": [
       {
-        text: "Summarizing and comparing sources or documents.",
-        why: "Correct. This is one of the explicit strengths listed in the training."
+        "text": "Approving final recommendations without consultant review.",
+        "why": "Incorrect. The training says accountability and validation remain with the consultant."
       },
       {
-        text: "Approving final recommendations without consultant review.",
-        why: "Incorrect. The training says accountability and validation remain with the consultant."
+        "text": "Guaranteeing that a market-size estimate is correct.",
+        "why": "Incorrect. The training describes LLMs as accelerators, not proof."
       },
       {
-        text: "Guaranteeing that a market-size estimate is correct.",
-        why: "Incorrect. The training describes LLMs as accelerators, not proof."
+        "text": "Ignoring source limits when the answer reads smoothly.",
+        "why": "Incorrect. Missing source limits is one of the risks highlighted in the training."
       },
       {
-        text: "Ignoring source limits when the answer reads smoothly.",
-        why: "Incorrect. Missing source limits is one of the risks highlighted in the training."
+        "text": "Replacing the need to check calculations in an Excel model.",
+        "why": "Incorrect. The training calls for review of logic and numbers rather than replacement of checks."
       },
       {
-        text: "Replacing the need to check calculations in an Excel model.",
-        why: "Incorrect. The training calls for review of logic and numbers rather than replacement of checks."
+        "text": "Summarizing and comparing sources or documents.",
+        "why": "Correct. This is one of the explicit strengths listed in the training."
       }
     ]
   },
   {
-    q: "Which model-routing choice best fits standard consulting work such as framing a problem or structuring a storyline?",
-    source: "Part 1 - OpenAI model routing: use a reasoning model by default for standard consulting work.",
-    correct: 4,
-    options: [
+    "q": "Which model-routing choice best fits standard consulting work such as framing a problem or structuring a storyline?",
+    "source": "Part 1 - OpenAI model routing: use a reasoning model by default for standard consulting work.",
+    "correct": 1,
+    "options": [
       {
-        text: "Use instant mode because all consulting work is low risk.",
-        why: "Incorrect. Instant mode is reserved for very simple, low-risk language tasks."
+        "text": "Use instant mode because all consulting work is low risk.",
+        "why": "Incorrect. Instant mode is reserved for very simple, low-risk language tasks."
       },
       {
-        text: "Use image generation because the task involves presentation thinking.",
-        why: "Incorrect. Image generation is for visual generation or editing, not default problem framing."
+        "text": "Use a reasoning model by default.",
+        "why": "Correct. This is the recommended setting for standard consulting work."
       },
       {
-        text: "Use no model; the training says models are unsuitable for storylines.",
-        why: "Incorrect. The examples explicitly include structuring a storyline."
+        "text": "Use image generation because the task involves presentation thinking.",
+        "why": "Incorrect. Image generation is for visual generation or editing, not default problem framing."
       },
       {
-        text: "Use GPT Pro only, regardless of task size.",
-        why: "Incorrect. GPT Pro is positioned for the hardest or longest high-value analyses, not every standard task."
+        "text": "Use no model; the training says models are unsuitable for storylines.",
+        "why": "Incorrect. The examples explicitly include structuring a storyline."
       },
       {
-        text: "Use a reasoning model by default.",
-        why: "Correct. This is the recommended setting for standard consulting work."
+        "text": "Use GPT Pro only, regardless of task size.",
+        "why": "Incorrect. GPT Pro is positioned for the hardest or longest high-value analyses, not every standard task."
       }
     ]
   },
   {
-    q: "When the task requires evidence or files, what is the recommended setup?",
-    source: "Part 1 - Model routing: for evidence or files, use a reasoning model plus needed tools such as file search, web or deep research, or data analysis.",
-    correct: 1,
-    options: [
+    "q": "When the task requires evidence or files, what is the recommended setup?",
+    "source": "Part 1 - Model routing: for evidence or files, use a reasoning model plus needed tools such as file search, web or deep research, or data analysis.",
+    "correct": 3,
+    "options": [
       {
-        text: "Use instant mode without tools so the answer is faster.",
-        why: "Incorrect. Evidence and files require source-aware tooling and deliberate reasoning, not just speed."
+        "text": "Use instant mode without tools so the answer is faster.",
+        "why": "Incorrect. Evidence and files require source-aware tooling and deliberate reasoning, not just speed."
       },
       {
-        text: "Use a reasoning model with only the needed approved tools enabled.",
-        why: "Correct. The training recommends reasoning plus the necessary tools and source discipline."
+        "text": "Enable every available tool to maximize model autonomy.",
+        "why": "Incorrect. The discipline is to enable only needed tools and enforce allowed and excluded sources."
       },
       {
-        text: "Enable every available tool to maximize model autonomy.",
-        why: "Incorrect. The discipline is to enable only needed tools and enforce allowed and excluded sources."
+        "text": "Avoid source review if the tool has file access.",
+        "why": "Incorrect. Tool access does not remove the need to review evidence and assumptions."
       },
       {
-        text: "Avoid source review if the tool has file access.",
-        why: "Incorrect. Tool access does not remove the need to review evidence and assumptions."
+        "text": "Use a reasoning model with only the needed approved tools enabled.",
+        "why": "Correct. The training recommends reasoning plus the necessary tools and source discipline."
       },
       {
-        text: "Use image generation first, then ask the model to infer the evidence.",
-        why: "Incorrect. Image generation is not a source-evidence workflow."
+        "text": "Use image generation first, then ask the model to infer the evidence.",
+        "why": "Incorrect. Image generation is not a source-evidence workflow."
       }
     ]
   },
   {
-    q: "For hard, long or repeated analyses, what extra discipline does the training recommend?",
-    source: "Part 1 - Model routing: for hard, long or repeated runs, clarify prompt, sources and output schema, and sample-check first.",
-    correct: 3,
-    options: [
+    "q": "For hard, long or repeated analyses, what extra discipline does the training recommend?",
+    "source": "Part 1 - Model routing: for hard, long or repeated runs, clarify prompt, sources and output schema, and sample-check first.",
+    "correct": 1,
+    "options": [
       {
-        text: "Run the full batch immediately to save setup time.",
-        why: "Incorrect. The training recommends clarifying the workflow and sample-checking first."
+        "text": "Run the full batch immediately to save setup time.",
+        "why": "Incorrect. The training recommends clarifying the workflow and sample-checking first."
       },
       {
-        text: "Avoid defining an output schema because flexibility is more important.",
-        why: "Incorrect. The training specifically calls for clarifying the output schema."
+        "text": "Clarify the prompt, sources and output schema, then sample-check first.",
+        "why": "Correct. This is the discipline stated for long, hard or repeated runs."
       },
       {
-        text: "Use only the fastest setting because repeated work is already structured.",
-        why: "Incorrect. Hard or repeated work needs more discipline, not less."
+        "text": "Avoid defining an output schema because flexibility is more important.",
+        "why": "Incorrect. The training specifically calls for clarifying the output schema."
       },
       {
-        text: "Clarify the prompt, sources and output schema, then sample-check first.",
-        why: "Correct. This is the discipline stated for long, hard or repeated runs."
+        "text": "Use only the fastest setting because repeated work is already structured.",
+        "why": "Incorrect. Hard or repeated work needs more discipline, not less."
       },
       {
-        text: "Skip human checks if GPT Pro is available.",
-        why: "Incorrect. Higher-capability models do not remove the need for checking."
+        "text": "Skip human checks if GPT Pro is available.",
+        "why": "Incorrect. Higher-capability models do not remove the need for checking."
       }
     ]
   },
   {
-    q: "What is an AI agent in the training's definition?",
-    source: "Part 1 - Agent tools: an AI agent is a model-based workflow configured with instructions, context, approved tools or MCP connectors, guardrails, tests and an owner.",
-    correct: 0,
-    options: [
+    "q": "What is an AI agent in the training's definition?",
+    "source": "Part 1 - Agent tools: an AI agent is a model-based workflow configured with instructions, context, approved tools or MCP connectors, guardrails, tests and an owner.",
+    "correct": 3,
+    "options": [
       {
-        text: "A bounded model-based workflow with instructions, context, tools or connectors, guardrails, tests and an owner.",
-        why: "Correct. This captures the definition used in the training."
+        "text": "A model that can do anything autonomously once it has internet access.",
+        "why": "Incorrect. The training emphasizes bounded tasks, controls, tests and ownership."
       },
       {
-        text: "A model that can do anything autonomously once it has internet access.",
-        why: "Incorrect. The training emphasizes bounded tasks, controls, tests and ownership."
+        "text": "A static prompt with no tools, owner or review boundary.",
+        "why": "Incorrect. The definition includes approved tools or connectors, guardrails, tests and an owner."
       },
       {
-        text: "A static prompt with no tools, owner or review boundary.",
-        why: "Incorrect. The definition includes approved tools or connectors, guardrails, tests and an owner."
+        "text": "A replacement for business process ownership.",
+        "why": "Incorrect. The training keeps owner and reviewer responsibility explicit."
       },
       {
-        text: "A replacement for business process ownership.",
-        why: "Incorrect. The training keeps owner and reviewer responsibility explicit."
+        "text": "A bounded model-based workflow with instructions, context, tools or connectors, guardrails, tests and an owner.",
+        "why": "Correct. This captures the definition used in the training."
       },
       {
-        text: "A visual design template for slide production only.",
-        why: "Incorrect. Agents can produce many outputs, but they are not just design templates."
+        "text": "A visual design template for slide production only.",
+        "why": "Incorrect. Agents can produce many outputs, but they are not just design templates."
       }
     ]
   },
   {
-    q: "What is the role of an MCP connector in the training?",
-    source: "Part 1 - Agent tools: an MCP connector exposes allowed data, tools or actions while access remains governed by authentication, permissions and review.",
-    correct: 2,
-    options: [
+    "q": "What is the role of an MCP connector in the training?",
+    "source": "Part 1 - Agent tools: an MCP connector exposes allowed data, tools or actions while access remains governed by authentication, permissions and review.",
+    "correct": 0,
+    "options": [
       {
-        text: "It bypasses authentication so an agent can move faster.",
-        why: "Incorrect. The training says access remains governed by authentication."
+        "text": "It gives an agent controlled access to approved tools, systems, data sources or workflows.",
+        "why": "Correct. This is the purpose of MCP in the training."
       },
       {
-        text: "It removes the need for logs and review.",
-        why: "Incorrect. Review and governance remain part of the control model."
+        "text": "It bypasses authentication so an agent can move faster.",
+        "why": "Incorrect. The training says access remains governed by authentication."
       },
       {
-        text: "It gives an agent controlled access to approved tools, systems, data sources or workflows.",
-        why: "Correct. This is the purpose of MCP in the training."
+        "text": "It removes the need for logs and review.",
+        "why": "Incorrect. Review and governance remain part of the control model."
       },
       {
-        text: "It turns every personal chat into a shared deployment automatically.",
-        why: "Incorrect. Shared deployment requires governance, allowed users, monitoring and revocation."
+        "text": "It turns every personal chat into a shared deployment automatically.",
+        "why": "Incorrect. Shared deployment requires governance, allowed users, monitoring and revocation."
       },
       {
-        text: "It is only used for image generation.",
-        why: "Incorrect. MCP examples include Drive, CRM, databases, research services and custom workflows."
+        "text": "It is only used for image generation.",
+        "why": "Incorrect. MCP examples include Drive, CRM, databases, research services and custom workflows."
       }
     ]
   },
   {
-    q: "Which agent access route is intended for current public web information and citations?",
-    source: "Part 1 - Agent tools table: web_search provides current public web information and citations.",
-    correct: 4,
-    options: [
+    "q": "Which agent access route is intended for current public web information and citations?",
+    "source": "Part 1 - Agent tools table: web_search provides current public web information and citations.",
+    "correct": 2,
+    "options": [
       {
-        text: "file_search.",
-        why: "Incorrect. File search retrieves from approved files or corpora."
+        "text": "file_search.",
+        "why": "Incorrect. File search retrieves from approved files or corpora."
       },
       {
-        text: "code_interpreter.",
-        why: "Incorrect. Code interpreter is sandboxed Python for data, charts, file processing and checks."
+        "text": "code_interpreter.",
+        "why": "Incorrect. Code interpreter is sandboxed Python for data, charts, file processing and checks."
       },
       {
-        text: "image_generation.",
-        why: "Incorrect. Image generation drafts or edits visuals when allowed."
+        "text": "web_search.",
+        "why": "Correct. The training maps web_search to current public web information and citations."
       },
       {
-        text: "A local spreadsheet formula with no source link.",
-        why: "Incorrect. This is not the public-web information route described in the training."
+        "text": "image_generation.",
+        "why": "Incorrect. Image generation drafts or edits visuals when allowed."
       },
       {
-        text: "web_search.",
-        why: "Correct. The training maps web_search to current public web information and citations."
+        "text": "A local spreadsheet formula with no source link.",
+        "why": "Incorrect. This is not the public-web information route described in the training."
       }
     ]
   },
   {
-    q: "Which route best fits Excel reconciliation, survey cleanup, chart checks or formula checks?",
-    source: "Part 1 - Agent tools table: code_interpreter is sandboxed Python for data, charts, file processing and checks.",
-    correct: 1,
-    options: [
+    "q": "Which route best fits Excel reconciliation, survey cleanup, chart checks or formula checks?",
+    "source": "Part 1 - Agent tools table: code_interpreter is sandboxed Python for data, charts, file processing and checks.",
+    "correct": 4,
+    "options": [
       {
-        text: "web_search, because calculations should be searched online.",
-        why: "Incorrect. Web search is for public web information and citations, not spreadsheet processing."
+        "text": "web_search, because calculations should be searched online.",
+        "why": "Incorrect. Web search is for public web information and citations, not spreadsheet processing."
       },
       {
-        text: "code_interpreter.",
-        why: "Correct. The training lists Excel reconciliation, survey cleanup, chart and formula checks under code interpreter."
+        "text": "image_generation.",
+        "why": "Incorrect. Image generation is for draft visuals, mockups and edits, not data reconciliation."
       },
       {
-        text: "image_generation.",
-        why: "Incorrect. Image generation is for draft visuals, mockups and edits, not data reconciliation."
+        "text": "Sharing settings.",
+        "why": "Incorrect. Sharing settings define access to an agent; they are not a data-processing route."
       },
       {
-        text: "Sharing settings.",
-        why: "Incorrect. Sharing settings define access to an agent; they are not a data-processing route."
+        "text": "A final memo only.",
+        "why": "Incorrect. A memo may report findings, but it is not the tool route for calculations and checks."
       },
       {
-        text: "A final memo only.",
-        why: "Incorrect. A memo may report findings, but it is not the tool route for calculations and checks."
+        "text": "code_interpreter.",
+        "why": "Correct. The training lists Excel reconciliation, survey cleanup, chart and formula checks under code interpreter."
       }
     ]
   },
   {
-    q: "What is a no-code agent best suited for?",
-    source: "Part 1 - No-code agents: a saved assistant packages role, method, approved files, examples and output checks for recurring work that is easier to run and review.",
-    correct: 3,
-    options: [
+    "q": "What is a no-code agent best suited for?",
+    "source": "Part 1 - No-code agents: a saved assistant packages role, method, approved files, examples and output checks for recurring work that is easier to run and review.",
+    "correct": 2,
+    "options": [
       {
-        text: "Unclear one-off judgement calls.",
-        why: "Incorrect. The training says no-code agents are not useful for unclear or one-off judgement calls."
+        "text": "Unclear one-off judgement calls.",
+        "why": "Incorrect. The training says no-code agents are not useful for unclear or one-off judgement calls."
       },
       {
-        text: "Autonomous business actions without review.",
-        why: "Incorrect. The training says no-code agents are not useful for autonomous business actions."
+        "text": "Autonomous business actions without review.",
+        "why": "Incorrect. The training says no-code agents are not useful for autonomous business actions."
       },
       {
-        text: "Handling unapproved or sensitive data by default.",
-        why: "Incorrect. The training excludes unapproved or sensitive data from no-code agent use."
+        "text": "Recurring work with a role, method, approved context, output checks and review boundaries.",
+        "why": "Correct. This matches the no-code agent definition and use case."
       },
       {
-        text: "Recurring work with a role, method, approved context, output checks and review boundaries.",
-        why: "Correct. This matches the no-code agent definition and use case."
+        "text": "Handling unapproved or sensitive data by default.",
+        "why": "Incorrect. The training excludes unapproved or sensitive data from no-code agent use."
       },
       {
-        text: "Replacing manager validation.",
-        why: "Incorrect. The training explicitly says no-code agents are not for replacing manager validation."
+        "text": "Replacing manager validation.",
+        "why": "Incorrect. The training explicitly says no-code agents are not for replacing manager validation."
       }
     ]
   },
   {
-    q: "Which set of layers describes a no-code agent in the training?",
-    source: "Part 1 - No-code agent layers: role, knowledge, method and output.",
-    correct: 0,
-    options: [
+    "q": "Which set of layers describes a no-code agent in the training?",
+    "source": "Part 1 - No-code agent layers: role, knowledge, method and output.",
+    "correct": 4,
+    "options": [
       {
-        text: "Role, knowledge, method and output.",
-        why: "Correct. These are the four layers in the no-code agent table."
+        "text": "Logo, color palette, slide master and footer.",
+        "why": "Incorrect. Those are design elements, not the no-code agent layers."
       },
       {
-        text: "Logo, color palette, slide master and footer.",
-        why: "Incorrect. Those are design elements, not the no-code agent layers."
+        "text": "Budget, travel plan, staffing pyramid and invoice.",
+        "why": "Incorrect. These are not the layers used to describe an agent."
       },
       {
-        text: "Budget, travel plan, staffing pyramid and invoice.",
-        why: "Incorrect. These are not the layers used to describe an agent."
+        "text": "Prompt, answer, confidence and applause.",
+        "why": "Incorrect. The training does not define no-code agents using these layers."
       },
       {
-        text: "Prompt, answer, confidence and applause.",
-        why: "Incorrect. The training does not define no-code agents using these layers."
+        "text": "Search, send, delete and archive.",
+        "why": "Incorrect. These are possible action types in some systems, not the agent anatomy in the training."
       },
       {
-        text: "Search, send, delete and archive.",
-        why: "Incorrect. These are possible action types in some systems, not the agent anatomy in the training."
+        "text": "Role, knowledge, method and output.",
+        "why": "Correct. These are the four layers in the no-code agent table."
       }
     ]
   },
   {
-    q: "What is the practical workflow for building an agent in the training?",
-    source: "Part 1 - How to build an agent: use case, inputs, instructions, output, test, share.",
-    correct: 4,
-    options: [
+    "q": "What is the practical workflow for building an agent in the training?",
+    "source": "Part 1 - How to build an agent: use case, inputs, instructions, output, test, share.",
+    "correct": 1,
+    "options": [
       {
-        text: "Share, output, test, instructions, inputs, use case.",
-        why: "Incorrect. Sharing comes after the agent is specified and tested, not first."
+        "text": "Share, output, test, instructions, inputs, use case.",
+        "why": "Incorrect. Sharing comes after the agent is specified and tested, not first."
       },
       {
-        text: "Choose logo, write headline, publish, then decide inputs.",
-        why: "Incorrect. The training starts with use case and inputs, not branding or publication."
+        "text": "Use case, inputs, instructions, output, test and share.",
+        "why": "Correct. This is the sequence shown in the agent-building workflow."
       },
       {
-        text: "Use case, publish, then add tests only if users complain.",
-        why: "Incorrect. Tests are part of the build workflow before sharing."
+        "text": "Choose logo, write headline, publish, then decide inputs.",
+        "why": "Incorrect. The training starts with use case and inputs, not branding or publication."
       },
       {
-        text: "Inputs, automation, revocation, billing and archive.",
-        why: "Incorrect. This is not the six-step build sequence shown in the training."
+        "text": "Use case, publish, then add tests only if users complain.",
+        "why": "Incorrect. Tests are part of the build workflow before sharing."
       },
       {
-        text: "Use case, inputs, instructions, output, test and share.",
-        why: "Correct. This is the sequence shown in the agent-building workflow."
+        "text": "Inputs, automation, revocation, billing and archive.",
+        "why": "Incorrect. This is not the six-step build sequence shown in the training."
       }
     ]
   },
   {
-    q: "Before sharing a no-code agent, which package of checks is required?",
-    source: "Part 1 - Before sharing: named owner and reviewer, approved sources with exclusions, only required tools enabled, expected and failure cases checked.",
-    correct: 1,
-    options: [
+    "q": "Before sharing a no-code agent, which package of checks is required?",
+    "source": "Part 1 - Before sharing: named owner and reviewer, approved sources with exclusions, only required tools enabled, expected and failure cases checked.",
+    "correct": 3,
+    "options": [
       {
-        text: "Only a catchy name and a broad description.",
-        why: "Incorrect. The training requires owner, sources, tools and tests before sharing."
+        "text": "Only a catchy name and a broad description.",
+        "why": "Incorrect. The training requires owner, sources, tools and tests before sharing."
       },
       {
-        text: "Owner, approved sources and exclusions, required tools only, and tested expected and failure cases.",
-        why: "Correct. This combines the required before-sharing controls."
+        "text": "All available tools enabled and no failure cases, so users can explore freely.",
+        "why": "Incorrect. The training says only required capabilities should be enabled and failure cases should be checked."
       },
       {
-        text: "All available tools enabled and no failure cases, so users can explore freely.",
-        why: "Incorrect. The training says only required capabilities should be enabled and failure cases should be checked."
+        "text": "A public link with no owner so the team can self-manage.",
+        "why": "Incorrect. A named maintainer and sharing perimeter are required."
       },
       {
-        text: "A public link with no owner so the team can self-manage.",
-        why: "Incorrect. A named maintainer and sharing perimeter are required."
+        "text": "Owner, approved sources and exclusions, required tools only, and tested expected and failure cases.",
+        "why": "Correct. This combines the required before-sharing controls."
       },
       {
-        text: "A single successful answer, with no source review.",
-        why: "Incorrect. Sources and tests must be checked, not just one output."
+        "text": "A single successful answer, with no source review.",
+        "why": "Incorrect. Sources and tests must be checked, not just one output."
       }
     ]
   },
   {
-    q: "Which candidate is strongest for a live agent according to the prioritization takeaway?",
-    source: "Part 1 - Brainstorm: the strongest live candidate is high-value, source-backed, reviewable and testable without sensitive data.",
-    correct: 3,
-    options: [
+    "q": "Which candidate is strongest for a live agent according to the prioritization takeaway?",
+    "source": "Part 1 - Brainstorm: the strongest live candidate is high-value, source-backed, reviewable and testable without sensitive data.",
+    "correct": 0,
+    "options": [
       {
-        text: "A task with low value, no template, and unclear review owner.",
-        why: "Incorrect. The training prioritizes value and reviewability."
+        "text": "A high-value, source-backed, reviewable and testable recurring task without sensitive data.",
+        "why": "Correct. This restates the prioritization takeaway."
       },
       {
-        text: "A task that depends on sensitive data and cannot be tested.",
-        why: "Incorrect. The key takeaway favors testable candidates without sensitive data."
+        "text": "A task with low value, no template, and unclear review owner.",
+        "why": "Incorrect. The training prioritizes value and reviewability."
       },
       {
-        text: "A task that is rare and has inconsistent inputs every time.",
-        why: "Incorrect. Recurrence and controllable inputs make better agent candidates."
+        "text": "A task that depends on sensitive data and cannot be tested.",
+        "why": "Incorrect. The key takeaway favors testable candidates without sensitive data."
       },
       {
-        text: "A high-value, source-backed, reviewable and testable recurring task without sensitive data.",
-        why: "Correct. This restates the prioritization takeaway."
+        "text": "A task that is rare and has inconsistent inputs every time.",
+        "why": "Incorrect. Recurrence and controllable inputs make better agent candidates."
       },
       {
-        text: "A task where no human reviewer is available.",
-        why: "Incorrect. The training asks who would review the output and treats reviewability as critical."
+        "text": "A task where no human reviewer is available.",
+        "why": "Incorrect. The training asks who would review the output and treats reviewability as critical."
       }
     ]
   },
   {
-    q: "For the Sector Deal Radar Agent example, which inputs are in scope?",
-    source: "Part 1 - Live build: Sector Deal Radar inputs include public M&A news, investor decks and trade press, with no confidential data.",
-    correct: 0,
-    options: [
+    "q": "For the Sector Deal Radar Agent example, which inputs are in scope?",
+    "source": "Part 1 - Live build: Sector Deal Radar inputs include public M&A news, investor decks and trade press, with no confidential data.",
+    "correct": 3,
+    "options": [
       {
-        text: "Public M&A news, investor decks and trade press, with no confidential data.",
-        why: "Correct. These are the inputs listed for the Sector Deal Radar Agent."
+        "text": "Any client-confidential material the team can access.",
+        "why": "Incorrect. The example explicitly says no confidential data."
       },
       {
-        text: "Any client-confidential material the team can access.",
-        why: "Incorrect. The example explicitly says no confidential data."
+        "text": "Private email threads and personal contact lists.",
+        "why": "Incorrect. These are not the listed public source inputs."
       },
       {
-        text: "Private email threads and personal contact lists.",
-        why: "Incorrect. These are not the listed public source inputs."
+        "text": "Only the agent's memory, with no source references.",
+        "why": "Incorrect. The example uses source-backed inputs and output with a source log."
       },
       {
-        text: "Only the agent's memory, with no source references.",
-        why: "Incorrect. The example uses source-backed inputs and output with a source log."
+        "text": "Public M&A news, investor decks and trade press, with no confidential data.",
+        "why": "Correct. These are the inputs listed for the Sector Deal Radar Agent."
       },
       {
-        text: "Unreviewed rumors with no source trail.",
-        why: "Incorrect. The output includes a source log and review rules."
+        "text": "Unreviewed rumors with no source trail.",
+        "why": "Incorrect. The output includes a source log and review rules."
       }
     ]
   },
   {
-    q: "What is the five-decision flow for a governed coding-agent run?",
-    source: "Part 2 - Objective and lean session flow: choose the surface, authorize the agent, brief the run, review evidence, then deploy under control.",
-    correct: 2,
-    options: [
+    "q": "What is the five-decision flow for a governed coding-agent run?",
+    "source": "Part 2 - Objective and lean session flow: choose the surface, authorize the agent, brief the run, review evidence, then deploy under control.",
+    "correct": 0,
+    "options": [
       {
-        text: "Design, publish, market, automate and forget.",
-        why: "Incorrect. This omits authorization, evidence review and controlled deployment."
+        "text": "Switch, permission, brief, review and deploy.",
+        "why": "Correct. These are the five decisions in Part 2."
       },
       {
-        text: "Search, summarize, decorate, export and delete logs.",
-        why: "Incorrect. The training's flow is about surface choice, permissions, brief, review and deployment."
+        "text": "Design, publish, market, automate and forget.",
+        "why": "Incorrect. This omits authorization, evidence review and controlled deployment."
       },
       {
-        text: "Switch, permission, brief, review and deploy.",
-        why: "Correct. These are the five decisions in Part 2."
+        "text": "Search, summarize, decorate, export and delete logs.",
+        "why": "Incorrect. The training's flow is about surface choice, permissions, brief, review and deployment."
       },
       {
-        text: "Prompt, answer, trust, share and scale.",
-        why: "Incorrect. The training does not allow trust and scale without evidence review and controls."
+        "text": "Prompt, answer, trust, share and scale.",
+        "why": "Incorrect. The training does not allow trust and scale without evidence review and controls."
       },
       {
-        text: "Ask, code, push, send and close.",
-        why: "Incorrect. This is not the governed run sequence from the training."
+        "text": "Ask, code, push, send and close.",
+        "why": "Incorrect. This is not the governed run sequence from the training."
       }
     ]
   },
   {
-    q: "When should a consultant switch from chat or a no-code agent to a coding agent?",
-    source: "Part 2 - Switch rule: use a coding agent when work involves scale, multi-file edits, commands, repeated runs, checks or evidence generation.",
-    correct: 4,
-    options: [
+    "q": "When should a consultant switch from chat or a no-code agent to a coding agent?",
+    "source": "Part 2 - Switch rule: use a coding agent when work involves scale, multi-file edits, commands, repeated runs, checks or evidence generation.",
+    "correct": 2,
+    "options": [
       {
-        text: "Whenever the task is a short wording edit.",
-        why: "Incorrect. Short low-risk language tasks can stay in chat."
+        "text": "Whenever the task is a short wording edit.",
+        "why": "Incorrect. Short low-risk language tasks can stay in chat."
       },
       {
-        text: "Whenever no file edits, commands or loops are needed.",
-        why: "Incorrect. The training assigns that pattern to chat, not coding agents."
+        "text": "Whenever no file edits, commands or loops are needed.",
+        "why": "Incorrect. The training assigns that pattern to chat, not coding agents."
       },
       {
-        text: "Only when no human review is possible.",
-        why: "Incorrect. Coding-agent runs still require human review."
+        "text": "When the work must inspect or edit files, run commands or checks, handle scale, or generate evidence.",
+        "why": "Correct. This captures the switch rule for coding-agent workflows."
       },
       {
-        text: "Only when the desired output is a paragraph of text.",
-        why: "Incorrect. A paragraph of text is usually a chat or no-code task."
+        "text": "Only when no human review is possible.",
+        "why": "Incorrect. Coding-agent runs still require human review."
       },
       {
-        text: "When the work must inspect or edit files, run commands or checks, handle scale, or generate evidence.",
-        why: "Correct. This captures the switch rule for coding-agent workflows."
+        "text": "Only when the desired output is a paragraph of text.",
+        "why": "Incorrect. A paragraph of text is usually a chat or no-code task."
       }
     ]
   },
   {
-    q: "Which question belongs in the pre-launch check for a coding-agent run?",
-    source: "Part 2 - Switch rule: before launch, answer scale or workflow, boundary, evidence and owner questions.",
-    correct: 1,
-    options: [
+    "q": "Which question belongs in the pre-launch check for a coding-agent run?",
+    "source": "Part 2 - Switch rule: before launch, answer scale or workflow, boundary, evidence and owner questions.",
+    "correct": 4,
+    "options": [
       {
-        text: "Can the agent approve its own result if it sounds confident?",
-        why: "Incorrect. The review gate says the agent cannot approve its own output."
+        "text": "Can the agent approve its own result if it sounds confident?",
+        "why": "Incorrect. The review gate says the agent cannot approve its own output."
       },
       {
-        text: "What changed file, screenshot, log, metric or QA note will prove the result?",
-        why: "Correct. This is the evidence question in the pre-launch checklist."
+        "text": "How can we avoid defining folders and files in scope?",
+        "why": "Incorrect. Boundary definition is part of the required pre-launch check."
       },
       {
-        text: "How can we avoid defining folders and files in scope?",
-        why: "Incorrect. Boundary definition is part of the required pre-launch check."
+        "text": "Can we remove the owner to avoid slowing the run?",
+        "why": "Incorrect. The owner is one of the required pre-launch decisions."
       },
       {
-        text: "Can we remove the owner to avoid slowing the run?",
-        why: "Incorrect. The owner is one of the required pre-launch decisions."
+        "text": "Can the task be made larger before the schema is fixed?",
+        "why": "Incorrect. Scale should follow fixed scope, schema, tools and stop rules."
       },
       {
-        text: "Can the task be made larger before the schema is fixed?",
-        why: "Incorrect. Scale should follow fixed scope, schema, tools and stop rules."
+        "text": "What changed file, screenshot, log, metric or QA note will prove the result?",
+        "why": "Correct. This is the evidence question in the pre-launch checklist."
       }
     ]
   },
   {
-    q: "What should happen if a coding-agent command might affect another folder or the scope is unclear?",
-    source: "Part 2 - Permission gates: stop if scope is unclear, a command can affect another folder, external access is needed, or no reviewer can accept the result.",
-    correct: 0,
-    options: [
+    "q": "What should happen if a coding-agent command might affect another folder or the scope is unclear?",
+    "source": "Part 2 - Permission gates: stop if scope is unclear, a command can affect another folder, external access is needed, or no reviewer can accept the result.",
+    "correct": 1,
+    "options": [
       {
-        text: "Stop and clarify the boundary before proceeding.",
-        why: "Correct. The permission-gate takeaway explicitly says to stop in this situation."
+        "text": "Run it anyway if the agent is likely to be correct.",
+        "why": "Incorrect. Confidence is not a permission mechanism."
       },
       {
-        text: "Run it anyway if the agent is likely to be correct.",
-        why: "Incorrect. Confidence is not a permission mechanism."
+        "text": "Stop and clarify the boundary before proceeding.",
+        "why": "Correct. The permission-gate takeaway explicitly says to stop in this situation."
       },
       {
-        text: "Broaden the command so it covers every possible folder.",
-        why: "Incorrect. The training calls for least privilege and scoped folders."
+        "text": "Broaden the command so it covers every possible folder.",
+        "why": "Incorrect. The training calls for least privilege and scoped folders."
       },
       {
-        text: "Disable logs so there is less operational friction.",
-        why: "Incorrect. Logs are part of controlled agent use."
+        "text": "Disable logs so there is less operational friction.",
+        "why": "Incorrect. Logs are part of controlled agent use."
       },
       {
-        text: "Proceed if no one is available to review.",
-        why: "Incorrect. The training says to stop if no reviewer can accept the result."
+        "text": "Proceed if no one is available to review.",
+        "why": "Incorrect. The training says to stop if no reviewer can accept the result."
       }
     ]
   },
   {
-    q: "When is it appropriate to parallelize coding-agent runs across companies or products?",
-    source: "Part 2 - Industrialized coding agent: parallelize only after scope, schema, tools and stop rules are fixed; the example uses 5-10 companies per run with retained logs.",
-    correct: 3,
-    options: [
+    "q": "When is it appropriate to parallelize coding-agent runs across companies or products?",
+    "source": "Part 2 - Industrialized coding agent: parallelize only after scope, schema, tools and stop rules are fixed; the example uses 5-10 companies per run with retained logs.",
+    "correct": 4,
+    "options": [
       {
-        text: "Before the output schema is fixed, to discover the schema through errors.",
-        why: "Incorrect. The training says schema should be fixed before parallelization."
+        "text": "Before the output schema is fixed, to discover the schema through errors.",
+        "why": "Incorrect. The training says schema should be fixed before parallelization."
       },
       {
-        text: "Before the source perimeter is defined, to maximize coverage.",
-        why: "Incorrect. Source scope must be controlled before scaling."
+        "text": "Before the source perimeter is defined, to maximize coverage.",
+        "why": "Incorrect. Source scope must be controlled before scaling."
       },
       {
-        text: "Only after all logs have been deleted.",
-        why: "Incorrect. Logs should be retained for each run."
+        "text": "Only after all logs have been deleted.",
+        "why": "Incorrect. Logs should be retained for each run."
       },
       {
-        text: "After scope, schema, tools and stop rules are fixed, with logs retained for each run.",
-        why: "Correct. This is the stated parallelization rule."
+        "text": "Whenever a consultant wants a faster answer, regardless of review plan.",
+        "why": "Incorrect. The training requires sample QA and owner sign-off before scale."
       },
       {
-        text: "Whenever a consultant wants a faster answer, regardless of review plan.",
-        why: "Incorrect. The training requires sample QA and owner sign-off before scale."
+        "text": "After scope, schema, tools and stop rules are fixed, with logs retained for each run.",
+        "why": "Correct. This is the stated parallelization rule."
       }
     ]
   },
   {
-    q: "At the review gate, what decision principle does the training apply?",
-    source: "Part 2 - Review gate: the agent executes, the human approves; decisions come from artifacts, logs, checks and unresolved risks, not agent confidence.",
-    correct: 2,
-    options: [
+    "q": "At the review gate, what decision principle does the training apply?",
+    "source": "Part 2 - Review gate: the agent executes, the human approves; decisions come from artifacts, logs, checks and unresolved risks, not agent confidence.",
+    "correct": 1,
+    "options": [
       {
-        text: "The agent may approve its own output if all tests pass.",
-        why: "Incorrect. The training says Codex can execute the workflow but cannot approve its own output."
+        "text": "The agent may approve its own output if all tests pass.",
+        "why": "Incorrect. The training says Codex can execute the workflow but cannot approve its own output."
       },
       {
-        text: "Confidence in the answer is enough to pilot or scale.",
-        why: "Incorrect. Decisions come from evidence, checks and residual risks, not confidence."
+        "text": "A named human reviewer must accept, revise, pause or reject based on evidence.",
+        "why": "Correct. This is the review-gate rule."
       },
       {
-        text: "A named human reviewer must accept, revise, pause or reject based on evidence.",
-        why: "Correct. This is the review-gate rule."
+        "text": "Confidence in the answer is enough to pilot or scale.",
+        "why": "Incorrect. Decisions come from evidence, checks and residual risks, not confidence."
       },
       {
-        text: "Any changed file should be accepted if it looks polished.",
-        why: "Incorrect. The reviewer checks scope match and unrelated changes, among other evidence."
+        "text": "Any changed file should be accepted if it looks polished.",
+        "why": "Incorrect. The reviewer checks scope match and unrelated changes, among other evidence."
       },
       {
-        text: "Unresolved source, permission, data or cost issues can be ignored for a pilot.",
-        why: "Incorrect. Such issues can lead to pause or rejection."
+        "text": "Unresolved source, permission, data or cost issues can be ignored for a pilot.",
+        "why": "Incorrect. Such issues can lead to pause or rejection."
       }
     ]
   },
   {
-    q: "What distinguishes a governed shared agent deployment from a personal run?",
-    source: "Part 2 - Shared deployment: governed agents have instructions, context, tests and owner; shared deployment adds allowed users, monitoring and revocation.",
-    correct: 4,
-    options: [
+    "q": "What distinguishes a governed shared agent deployment from a personal run?",
+    "source": "Part 2 - Shared deployment: governed agents have instructions, context, tests and owner; shared deployment adds allowed users, monitoring and revocation.",
+    "correct": 3,
+    "options": [
       {
-        text: "A governed deployment removes the need for an owner.",
-        why: "Incorrect. The governed agent explicitly includes an owner."
+        "text": "A governed deployment removes the need for an owner.",
+        "why": "Incorrect. The governed agent explicitly includes an owner."
       },
       {
-        text: "A personal run and a shared deployment have identical controls.",
-        why: "Incorrect. Shared deployment adds allowed users, monitoring and revocation."
+        "text": "A personal run and a shared deployment have identical controls.",
+        "why": "Incorrect. Shared deployment adds allowed users, monitoring and revocation."
       },
       {
-        text: "A shared deployment should hide logs from users.",
-        why: "Incorrect. The MCP deployment logic includes logs and revocation."
+        "text": "A shared deployment should hide logs from users.",
+        "why": "Incorrect. The MCP deployment logic includes logs and revocation."
       },
       {
-        text: "A personal run is automatically safe to batch across the team.",
-        why: "Incorrect. Sharing and batching require controls and human approval."
+        "text": "A governed deployment defines owner, tests, allowed users, monitoring and a way to revoke access.",
+        "why": "Correct. These are the controls described for governed and shared deployment."
       },
       {
-        text: "A governed deployment defines owner, tests, allowed users, monitoring and a way to revoke access.",
-        why: "Correct. These are the controls described for governed and shared deployment."
+        "text": "A personal run is automatically safe to batch across the team.",
+        "why": "Incorrect. Sharing and batching require controls and human approval."
       }
     ]
   },
   {
-    q: "In the market and target intelligence workflow example, what is the operating rule?",
-    source: "Part 2 - Agent orchestration and MCP: split the workflow, approve each connector, log evidence and keep human gates before sharing, batching or recurrence.",
-    correct: 1,
-    options: [
+    "q": "In the market and target intelligence workflow example, what is the operating rule?",
+    "source": "Part 2 - Agent orchestration and MCP: split the workflow, approve each connector, log evidence and keep human gates before sharing, batching or recurrence.",
+    "correct": 0,
+    "options": [
       {
-        text: "Use one general agent for every step and skip handoffs.",
-        why: "Incorrect. The training describes splitting the workflow and routing specialist steps."
+        "text": "Split the workflow, approve each connector, log evidence and keep human gates before sharing or batching.",
+        "why": "Correct. This restates the operating rule."
       },
       {
-        text: "Split the workflow, approve each connector, log evidence and keep human gates before sharing or batching.",
-        why: "Correct. This restates the operating rule."
+        "text": "Use one general agent for every step and skip handoffs.",
+        "why": "Incorrect. The training describes splitting the workflow and routing specialist steps."
       },
       {
-        text: "Batch first, then decide whether connectors were appropriate.",
-        why: "Incorrect. Connectors should be approved before use."
+        "text": "Batch first, then decide whether connectors were appropriate.",
+        "why": "Incorrect. Connectors should be approved before use."
       },
       {
-        text: "Avoid evidence logs so the workflow is easier to repeat.",
-        why: "Incorrect. Evidence logging is part of the operating rule."
+        "text": "Avoid evidence logs so the workflow is easier to repeat.",
+        "why": "Incorrect. Evidence logging is part of the operating rule."
       },
       {
-        text: "Let the draft memo approve the quality step automatically.",
-        why: "Incorrect. Human gates remain before sharing, batching or recurrence."
+        "text": "Let the draft memo approve the quality step automatically.",
+        "why": "Incorrect. Human gates remain before sharing, batching or recurrence."
       }
     ]
   },
   {
-    q: "What is the main conclusion about scaling coding-agent workflows?",
-    source: "Part 2 - Conclusion: no evidence, no scale; the agent can run the workflow, Advancy owns the decision.",
-    correct: 0,
-    options: [
+    "q": "What is the main conclusion about scaling coding-agent workflows?",
+    "source": "Part 2 - Conclusion: no evidence, no scale; the agent can run the workflow, Advancy owns the decision.",
+    "correct": 2,
+    "options": [
       {
-        text: "No evidence, no scale.",
-        why: "Correct. This is the explicit closing takeaway."
+        "text": "Scale first, then look for evidence if problems appear.",
+        "why": "Incorrect. The conclusion requires evidence before scaling."
       },
       {
-        text: "Scale first, then look for evidence if problems appear.",
-        why: "Incorrect. The conclusion requires evidence before scaling."
+        "text": "The agent owns the decision once it has run checks.",
+        "why": "Incorrect. The training says Advancy owns the decision."
       },
       {
-        text: "The agent owns the decision once it has run checks.",
-        why: "Incorrect. The training says Advancy owns the decision."
+        "text": "No evidence, no scale.",
+        "why": "Correct. This is the explicit closing takeaway."
       },
       {
-        text: "Automation removes the need for logs, stop rules and an owner.",
-        why: "Incorrect. Automation is repeated agent execution with logs, stop rules and an owner."
+        "text": "Automation removes the need for logs, stop rules and an owner.",
+        "why": "Incorrect. Automation is repeated agent execution with logs, stop rules and an owner."
       },
       {
-        text: "Coding agents should be used for all simple draft and review tasks.",
-        why: "Incorrect. The conclusion says chat is enough for simple draft or review tasks."
+        "text": "Coding agents should be used for all simple draft and review tasks.",
+        "why": "Incorrect. The conclusion says chat is enough for simple draft or review tasks."
       }
     ]
   }
