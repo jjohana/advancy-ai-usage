@@ -1,6 +1,7 @@
 window.quizConfig = {
   "quizId": "advancy-ai-usage",
   "quizName": "Advancy AI Usage Training Assessment",
+  "scoreEndpoint": "https://advancy-ai-score-api.advancy-ai-training.workers.dev/submit",
   "correctionTitle": "Correction from the training material",
   "trainingEvaluation": {
     "title": "Training evaluation",
