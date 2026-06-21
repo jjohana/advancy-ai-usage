@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advancy AI Usage Training - Assessment</title>
+  <meta name="description" content="Advancy AI usage training knowledge assessment with question-by-question correction." />
+  <link rel="icon" href="assets/advancy-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topline">
+    <div class="wrap masthead">
+      <img class="logo" src="assets/advancy-logo.png" alt="Advancy - Driving strategy to results" />
+      <div class="headline">
+        <div class="eyebrow">AI usage training</div>
+        <h1>Knowledge assessment</h1>
+        <p class="tagline">Question-by-question assessment based on the June 2026 Advancy Generative AI training presentations, excluding AI Usage Charter content.</p>
+      </div>
+    </div>
+    <div class="orange-rule" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="wrap assessment-grid">
+      <aside class="side-panel" aria-labelledby="assessment-summary">
+        <h2 id="assessment-summary">Assessment setup</h2>
+        <p>Submit one answer at a time. The correction explains why every option is right or wrong under the training material.</p>
+        <div class="metrics" aria-label="Assessment metrics">
+          <div class="metric"><strong>25</strong><span>Questions</span></div>
+          <div class="metric"><strong>A-E</strong><span>Five choices each</span></div>
+          <div class="metric"><strong>1</strong><span>Correct answer</span></div>
+          <div class="metric"><strong>70%</strong><span>Pass threshold</span></div>
+        </div>
+        <div class="status-block">
+          <p id="progress">Question 1 / 25</p>
+          <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        </div>
+        <div class="score-card" aria-live="polite">
+          <span>Current score</span>
+          <strong id="score">0 / 0</strong>
+        </div>
+      </aside>
+
+      <section class="quiz-shell" aria-labelledby="quiz-title">
+        <div class="quiz-toolbar">
+          <div>
+            <strong id="quiz-title">Advancy AI Usage Training Questionnaire</strong>
+            <span id="question-source">Training basis</span>
+          </div>
+          <div class="toolbar-actions">
+            <button type="button" class="button button-secondary" id="restart-top">Restart</button>
+          </div>
+        </div>
+        <div id="question-card" class="question-card"></div>
+      </section>
+    </div>
+    <div class="wrap">
+      <section id="result" aria-live="polite"></section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>Advancy AI Usage Training Assessment</span>
+      <a href="https://www.advancy.com/">advancy.com</a>
+    </div>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
