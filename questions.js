@@ -1,7 +1,46 @@
 window.quizConfig = {
   "quizId": "advancy-ai-usage",
   "quizName": "Advancy AI Usage Training Assessment",
-  "correctionTitle": "Correction from the training material"
+  "correctionTitle": "Correction from the training material",
+  "trainingEvaluation": {
+    "title": "Training evaluation",
+    "intro": "Please provide a concise evaluation of the training. Your feedback is submitted privately with your assessment result and is used to improve future sessions.",
+    "scaleLabel": "Rating scale: 1 = insufficient, 2 = needs improvement, 3 = satisfactory, 4 = strong, 5 = excellent.",
+    "criteria": [
+      {
+        "id": "training_relevance",
+        "label": "Relevance to consulting work and day-to-day delivery"
+      },
+      {
+        "id": "conceptual_clarity",
+        "label": "Clarity of LLM fundamentals, agent concepts and tool-routing principles"
+      },
+      {
+        "id": "practical_applicability",
+        "label": "Practical applicability of examples, workflows and exercises"
+      },
+      {
+        "id": "governance_confidence",
+        "label": "Confidence in applying governance, permissions and human-review gates"
+      },
+      {
+        "id": "codex_workflow_confidence",
+        "label": "Confidence in knowing when and how to switch to Codex-style coding agents"
+      },
+      {
+        "id": "materials_quality",
+        "label": "Quality, structure and professionalism of the training materials"
+      },
+      {
+        "id": "pace_and_depth",
+        "label": "Balance between pace, depth and time for questions"
+      },
+      {
+        "id": "overall_satisfaction",
+        "label": "Overall satisfaction with the training session"
+      }
+    ]
+  }
 };
 
 window.quizQuestions = [
