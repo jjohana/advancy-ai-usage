@@ -73,7 +73,7 @@ window.quizQuestions = [
     ]
   },
   {
-    "q": "How should consultants treat an LLM answer before using it in work product?",
+    "q": "How should participants treat an LLM answer before using it in work product?",
     "source": "Part 1 - LLMs are work accelerators, not proof: treat output as a draft hypothesis until sources, logic, numbers and confidentiality have been checked.",
     "correct": 2,
     "options": [
@@ -94,8 +94,8 @@ window.quizQuestions = [
         "why": "Incorrect. Internal use still requires checking sources, logic, numbers and confidentiality."
       },
       {
-        "text": "As a neutral source of accountability that can replace consultant judgement.",
-        "why": "Incorrect. The training keeps accountability with the consultant, not the model."
+        "text": "As a neutral source of accountability that can replace professional judgement.",
+        "why": "Incorrect. The training keeps accountability with the participant, not the model."
       }
     ]
   },
@@ -105,8 +105,8 @@ window.quizQuestions = [
     "correct": 4,
     "options": [
       {
-        "text": "Approving final recommendations without consultant review.",
-        "why": "Incorrect. The training says accountability and validation remain with the consultant."
+        "text": "Approving final recommendations without human review.",
+        "why": "Incorrect. The training says accountability and validation remain with the participant."
       },
       {
         "text": "Guaranteeing that a market-size estimate is correct.",
@@ -154,25 +154,25 @@ window.quizQuestions = [
     ]
   },
   {
-    "q": "When the task requires evidence or files, what is the recommended setup?",
-    "source": "Part 1 - Model routing: for evidence or files, use a reasoning model plus needed tools such as file search, web or deep research, or data analysis.",
+    "q": "When the task requires evidence or files that are authorized for AI use, what is the recommended setup?",
+    "source": "Part 1 - Model routing and AI-use charter compatibility: for evidence or Green/permitted files, use a reasoning model plus only the needed tools such as file search, web or deep research, or data analysis.",
     "correct": 3,
     "options": [
       {
         "text": "Use instant mode without tools so the answer is faster.",
-        "why": "Incorrect. Evidence and files require source-aware tooling and deliberate reasoning, not just speed."
+        "why": "Incorrect. Evidence and authorized files require source-aware tooling and deliberate reasoning, not just speed."
       },
       {
         "text": "Enable every available tool to maximize model autonomy.",
-        "why": "Incorrect. The discipline is to enable only needed tools and enforce allowed and excluded sources."
+        "why": "Incorrect. The discipline is to enable only needed tools and enforce allowed, excluded, and Green/permitted source boundaries."
       },
       {
         "text": "Avoid source review if the tool has file access.",
-        "why": "Incorrect. Tool access does not remove the need to review evidence and assumptions."
+        "why": "Incorrect. Tool access does not remove the need to confirm file authorization and review evidence and assumptions."
       },
       {
-        "text": "Use a reasoning model with only the needed approved tools enabled.",
-        "why": "Correct. The training recommends reasoning plus the necessary tools and source discipline."
+        "text": "Use a reasoning model with only the needed approved tools and permitted source perimeter enabled.",
+        "why": "Correct. The training recommends reasoning plus necessary tools, source discipline, and charter-compatible file authorization."
       },
       {
         "text": "Use image generation first, then ask the model to infer the evidence.",
@@ -236,12 +236,12 @@ window.quizQuestions = [
   },
   {
     "q": "What is the role of an MCP connector in the training?",
-    "source": "Part 1 - Agent tools: an MCP connector exposes allowed data, tools or actions while access remains governed by authentication, permissions and review.",
+    "source": "Part 1 - Agent tools and AI-use charter compatibility: an MCP connector exposes allowed data, tools or actions while access remains governed by authentication, permissions, review, and any restrictions on the underlying data.",
     "correct": 0,
     "options": [
       {
-        "text": "It gives an agent controlled access to approved tools, systems, data sources or workflows.",
-        "why": "Correct. This is the purpose of MCP in the training."
+        "text": "It gives an agent controlled access to approved tools, systems, data sources or workflows, subject to the AI-use permissions on that data.",
+        "why": "Correct. This is the purpose of MCP in the training, and it does not override the charter status of the underlying records."
       },
       {
         "text": "It bypasses authentication so an agent can move faster.",
@@ -257,7 +257,7 @@ window.quizQuestions = [
       },
       {
         "text": "It is only used for image generation.",
-        "why": "Incorrect. MCP examples include Drive, CRM, databases, research services and custom workflows."
+        "why": "Incorrect. MCP examples include Drive, CRM, databases, research services and custom workflows, but only within approved permission boundaries."
       }
     ]
   },
@@ -268,11 +268,11 @@ window.quizQuestions = [
     "options": [
       {
         "text": "file_search.",
-        "why": "Incorrect. File search retrieves from approved files or corpora."
+        "why": "Incorrect. File search retrieves from approved Green/permitted files or corpora."
       },
       {
         "text": "code_interpreter.",
-        "why": "Incorrect. Code interpreter is sandboxed Python for data, charts, file processing and checks."
+        "why": "Incorrect. Code interpreter is sandboxed Python for authorized data, charts, file processing and checks."
       },
       {
         "text": "web_search.",
@@ -290,7 +290,7 @@ window.quizQuestions = [
   },
   {
     "q": "Which route best fits Excel reconciliation, survey cleanup, chart checks or formula checks?",
-    "source": "Part 1 - Agent tools table: code_interpreter is sandboxed Python for data, charts, file processing and checks.",
+    "source": "Part 1 - Agent tools table and AI-use charter compatibility: code_interpreter is sandboxed Python for authorized data, charts, file processing and checks.",
     "correct": 4,
     "options": [
       {
@@ -311,13 +311,13 @@ window.quizQuestions = [
       },
       {
         "text": "code_interpreter.",
-        "why": "Correct. The training lists Excel reconciliation, survey cleanup, chart and formula checks under code interpreter."
+        "why": "Correct. The training lists Excel reconciliation, survey cleanup, chart and formula checks under code interpreter, assuming the files or data are authorized for AI use."
       }
     ]
   },
   {
     "q": "What is a no-code agent best suited for?",
-    "source": "Part 1 - No-code agents: a saved assistant packages role, method, approved files, examples and output checks for recurring work that is easier to run and review.",
+    "source": "Part 1 - No-code agents and AI-use charter compatibility: a saved assistant packages role, method, Green/permitted files or approved context, examples and output checks for recurring work that is easier to run and review.",
     "correct": 2,
     "options": [
       {
@@ -329,12 +329,12 @@ window.quizQuestions = [
         "why": "Incorrect. The training says no-code agents are not useful for autonomous business actions."
       },
       {
-        "text": "Recurring work with a role, method, approved context, output checks and review boundaries.",
-        "why": "Correct. This matches the no-code agent definition and use case."
+        "text": "Recurring work with a role, method, Green/permitted context, output checks and review boundaries.",
+        "why": "Correct. This matches the no-code agent definition and keeps the knowledge base within approved AI-use boundaries."
       },
       {
         "text": "Handling unapproved or sensitive data by default.",
-        "why": "Incorrect. The training excludes unapproved or sensitive data from no-code agent use."
+        "why": "Incorrect. The training excludes unapproved, restricted or sensitive data from no-code agent use."
       },
       {
         "text": "Replacing manager validation.",
@@ -398,7 +398,7 @@ window.quizQuestions = [
   },
   {
     "q": "Before sharing a no-code agent, which package of checks is required?",
-    "source": "Part 1 - Before sharing: named owner and reviewer, approved sources with exclusions, only required tools enabled, expected and failure cases checked.",
+    "source": "Part 1 - Before sharing and AI-use charter compatibility: named owner and reviewer, approved Green/permitted sources with exclusions, only required tools enabled, expected and failure cases checked.",
     "correct": 3,
     "options": [
       {
@@ -414,8 +414,8 @@ window.quizQuestions = [
         "why": "Incorrect. A named maintainer and sharing perimeter are required."
       },
       {
-        "text": "Owner, approved sources and exclusions, required tools only, and tested expected and failure cases.",
-        "why": "Correct. This combines the required before-sharing controls."
+        "text": "Owner, approved Green/permitted sources and exclusions, required tools only, and tested expected and failure cases.",
+        "why": "Correct. This combines the required before-sharing controls and keeps the agent's source perimeter charter-compatible."
       },
       {
         "text": "A single successful answer, with no source review.",
@@ -505,8 +505,8 @@ window.quizQuestions = [
     ]
   },
   {
-    "q": "When should a consultant switch from chat or a no-code agent to a coding agent?",
-    "source": "Part 2 - Switch rule: use a coding agent when work involves scale, multi-file edits, commands, repeated runs, checks or evidence generation.",
+    "q": "When should a participant switch from chat or a no-code agent to a coding agent?",
+    "source": "Part 2 - Switch rule and AI-use charter compatibility: use a coding agent when work involves scale, authorized multi-file edits, commands, repeated runs, checks or evidence generation.",
     "correct": 2,
     "options": [
       {
@@ -518,8 +518,8 @@ window.quizQuestions = [
         "why": "Incorrect. The training assigns that pattern to chat, not coding agents."
       },
       {
-        "text": "When the work must inspect or edit files, run commands or checks, handle scale, or generate evidence.",
-        "why": "Correct. This captures the switch rule for coding-agent workflows."
+        "text": "When the work must inspect or edit authorized files, run commands or checks, handle scale, or generate evidence.",
+        "why": "Correct. This captures the switch rule for coding-agent workflows while preserving file-scope authorization."
       },
       {
         "text": "Only when no human review is possible.",
@@ -533,7 +533,7 @@ window.quizQuestions = [
   },
   {
     "q": "Which question belongs in the pre-launch check for a coding-agent run?",
-    "source": "Part 2 - Switch rule: before launch, answer scale or workflow, boundary, evidence and owner questions.",
+    "source": "Part 2 - Switch rule: before launch, answer scale or workflow, authorized boundary, evidence and owner questions.",
     "correct": 4,
     "options": [
       {
@@ -541,8 +541,8 @@ window.quizQuestions = [
         "why": "Incorrect. The review gate says the agent cannot approve its own output."
       },
       {
-        "text": "How can we avoid defining folders and files in scope?",
-        "why": "Incorrect. Boundary definition is part of the required pre-launch check."
+        "text": "How can we avoid defining authorized folders and files in scope?",
+        "why": "Incorrect. Authorized boundary definition is part of the required pre-launch check."
       },
       {
         "text": "Can we remove the owner to avoid slowing the run?",
@@ -560,7 +560,7 @@ window.quizQuestions = [
   },
   {
     "q": "What should happen if a coding-agent command might affect another folder or the scope is unclear?",
-    "source": "Part 2 - Permission gates: stop if scope is unclear, a command can affect another folder, external access is needed, or no reviewer can accept the result.",
+    "source": "Part 2 - Permission gates: stop if scope or file authorization is unclear, a command can affect another folder, external access is needed, or no reviewer can accept the result.",
     "correct": 1,
     "options": [
       {
@@ -569,11 +569,11 @@ window.quizQuestions = [
       },
       {
         "text": "Stop and clarify the boundary before proceeding.",
-        "why": "Correct. The permission-gate takeaway explicitly says to stop in this situation."
+        "why": "Correct. The permission-gate takeaway explicitly says to stop in this situation and clarify the authorized boundary."
       },
       {
         "text": "Broaden the command so it covers every possible folder.",
-        "why": "Incorrect. The training calls for least privilege and scoped folders."
+        "why": "Incorrect. The training calls for least privilege, scoped folders, and authorized files only."
       },
       {
         "text": "Disable logs so there is less operational friction.",
@@ -603,7 +603,7 @@ window.quizQuestions = [
         "why": "Incorrect. Logs should be retained for each run."
       },
       {
-        "text": "Whenever a consultant wants a faster answer, regardless of review plan.",
+        "text": "Whenever a participant wants a faster answer, regardless of review plan.",
         "why": "Incorrect. The training requires sample QA and owner sign-off before scale."
       },
       {
@@ -668,12 +668,12 @@ window.quizQuestions = [
   },
   {
     "q": "In the market and target intelligence workflow example, what is the operating rule?",
-    "source": "Part 2 - Agent orchestration and MCP: split the workflow, approve each connector, log evidence and keep human gates before sharing, batching or recurrence.",
+    "source": "Part 2 - Agent orchestration and MCP: split the workflow, approve each connector and its permitted data perimeter, log evidence and keep human gates before sharing, batching or recurrence.",
     "correct": 0,
     "options": [
       {
-        "text": "Split the workflow, approve each connector, log evidence and keep human gates before sharing or batching.",
-        "why": "Correct. This restates the operating rule."
+        "text": "Split the workflow, approve each connector and permitted data perimeter, log evidence and keep human gates before sharing or batching.",
+        "why": "Correct. This restates the operating rule and preserves the AI-use charter compatibility check."
       },
       {
         "text": "Use one general agent for every step and skip handoffs.",
@@ -681,7 +681,7 @@ window.quizQuestions = [
       },
       {
         "text": "Batch first, then decide whether connectors were appropriate.",
-        "why": "Incorrect. Connectors should be approved before use."
+        "why": "Incorrect. Connectors and their permitted data perimeter should be approved before use."
       },
       {
         "text": "Avoid evidence logs so the workflow is easier to repeat.",
